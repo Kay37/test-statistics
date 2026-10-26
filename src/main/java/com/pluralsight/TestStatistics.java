@@ -9,6 +9,11 @@ public class TestStatistics {
         // * created an integer array with 10 random test scores
     int[] testScores = {25, 56, 43, 98, 77, 37, 89, 90, 90, 100};
         // * find high score from the array
+
+        // ! we're going to use the Stream API for these calculations.
+        // ! we import the java.util.Arrays library and put our Array into the stream, so that as it
+        // ! "floats" down and collides with each description / method, it puts it all together
+        // ! at the final method that you terminate with a ;
     int highScore = Arrays.stream(testScores)
             .max()
             .getAsInt();
